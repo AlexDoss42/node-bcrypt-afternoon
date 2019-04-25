@@ -24,5 +24,6 @@ app.use(session({
 }))
 
 app.post('/auth/register', authCtrl.register)
+app.post('/auth/login', authCtrl.login)
 
 app.listen(port, () => console.log(`It's over Anakin. I have the ${port} port`))
